@@ -42,6 +42,8 @@ RUN pip install Werkzeug
 RUN pip install WTForms
 RUN pip install zipp
 RUN pip install flask_sqlalchemy_session
-CMD [ "python", "./app.py" ]
+EXPOSE 5000
+
+CMD [ "python3", "app.py" ]
 
 

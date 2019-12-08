@@ -1,8 +1,10 @@
 version: '3'
 services:
-  web:
-    build: .
+  flask:
+    build:
+        context: .
+        dockerfile: Dockerfile
     ports:
-      - "8080:5000"
-  Python-barcode:
+      - "5000:5000"
     image: "python-barcode:latest"
+    command: python3 app.py
