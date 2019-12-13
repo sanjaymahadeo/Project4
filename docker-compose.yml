@@ -7,4 +7,6 @@ services:
     ports:
       - "5000:5000"
     image: "python-barcode:latest"
+    deploy:
+      replicas: 4
     command: python3 app.py
